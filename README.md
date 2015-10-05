@@ -13,13 +13,15 @@ image.
 
 ## Usage
 
-    $ docker run --rm -t \
-        -v $(PWD)/input.scss:/home/ustwo/input.scss \
-        ustwo/sass:3.2.5 \
-          --sourcemap \
-          --style compressed \
-          input.scss output.css
+```sh
+$ docker run --rm -t \
+    -v $(PWD)/input.scss:/home/ustwo/input.scss \
+    ustwo/sass:3.2.5 \
+      --sourcemap \
+      --style compressed \
+      input.scss output.css
+```
 
 ## Maintainers
 
-* [Arnau Siches](mailto:arnau@ustwo.com)
+* Arnau Siches (arnau@ustwo.com)
