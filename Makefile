@@ -11,6 +11,11 @@ shell:
 version:
 	@docker run --rm -t $(image_name)
 
+release: alpine-sassc-3.2.5.tar.gz
+
+alpine-sassc-3.2.5.tar.gz:
+	tar -zcvf $@ sassc
+
 test: test-001 test-002
 
 test-001:
