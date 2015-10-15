@@ -1,19 +1,22 @@
 .PHONY: build shell test version
 
 image_name := ustwo/sass
+SASS_VERSION ?= 3.3.0-beta3
 
 build:
 	@docker build -t $(image_name) .
 
 shell:
-	@docker run --rm -it --entrypoint=/bin/sh $(image_name)
+	@docker run --rm -it --entrypoint=/bin/sh \
+		-v $(PWD):/home/ustwo/source \
+		$(image_name)
 
 version:
 	@docker run --rm -t $(image_name)
 
-release: alpine-sassc-3.2.5.tar.gz
+release: alpine-sassc-$(SASS_VERSION).tar.gz
 
-alpine-sassc-3.2.5.tar.gz:
+alpine-sassc-$(SASS_VERSION).tar.gz:
 	tar -zcvf $@ sassc
 
 test: test-001 test-002
