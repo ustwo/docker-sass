@@ -2,8 +2,8 @@
 
 set -e
 
-SASSC_VERSION=3.3.0-beta3
-LIBSASS_VERSION=3.3.0-beta3
+SASSC_VERSION=3.3.0
+LIBSASS_VERSION=3.3.0
 SASS_LIBSASS_PATH=/usr/local/libsass-$LIBSASS_VERSION
 
 build_deps="curl g++ make"

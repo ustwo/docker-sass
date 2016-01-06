@@ -5,7 +5,8 @@ image.
 
 ## Versions
 
-* 3.2.5, latest
+* 3.3.0, latest
+* 3.2.5
 
 ## Assumptions
 
@@ -15,8 +16,8 @@ image.
 
 ```sh
 $ docker run --rm -t \
-    -v $(PWD)/input.scss:/home/ustwo/input.scss \
-    ustwo/sass:3.2.5 \
+    -v $(pwd)/input.scss:/home/ustwo/input.scss \
+    ustwo/sass:3.3.0 \
       --sourcemap \
       --style compressed \
       input.scss output.css
