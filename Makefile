@@ -1,5 +1,5 @@
 image_name := ustwo/sass
-SASS_VERSION ?= 3.3.0
+SASS_VERSION ?= 3.3.6
 
 DOCKER_TASK := docker run --rm -it
 
