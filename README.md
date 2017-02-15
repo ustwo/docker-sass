@@ -24,6 +24,16 @@ $ docker run --rm -t \
       input.scss output.css
 ```
 
+## Contact
+
+* open.source@ustwo.com
+
+
 ## Maintainers
 
 * Arnau Siches (arnau@ustwo.com)
+
+
+## License
+
+Licensed under [MIT](./LICENSE).
